@@ -1,0 +1,16 @@
+kind: GrafanaResourceDefinition
+apiVersion: kinds.grafana.com/v1
+metadata:
+    name: dashboards.core.kinds.grafana.com
+spec:
+    group: core.kinds.grafana.com
+    versions:
+        - name: v0-alpha
+          served: true
+          storage: true
+    names:
+        kind: Dashboard
+        listKind: DashboardList
+        plural: dashboards
+        singular: dashboard
+    scope: Namespaced
